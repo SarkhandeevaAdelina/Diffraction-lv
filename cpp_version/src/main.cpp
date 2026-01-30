@@ -124,7 +124,7 @@ int main() {
 
     // 3. Тестирование зависимости от M
     std::cout << "\n\nТестирование зависимости от M (при фиксированном N = " << N_default << ")\n";
-    std::vector<int> M_values = {10, 20, 50, 100, 200};
+    std::vector<int> M_values = {10, 20, 30, 40, 50};
     std::cout << "M,MatrixTime_ms,SolveTime_ms,TotalTime_ms\n";
     for (int M : M_values) {
         DifrOnLenta solver(a, b, lambda, theta, N_default, skinDepth, M);
